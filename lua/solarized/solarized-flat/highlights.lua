@@ -474,6 +474,41 @@ function M.load_syntax(colors)
 	syntax['NavicText'] = syntax['LineNr']
 	syntax['NavicSeparator'] = syntax['Comment']
 
+  -- Neogit
+  syntax['NeogitBranch'] = { fg = colors.yellow, style = "bold", }
+  syntax['NeogitRemote'] = { fg = colors.green, style = "bold", }
+  syntax['NeogitUnmergedInto'] = syntax["Function"]
+  syntax['NeogitUnpulledFrom'] = syntax["Function"]
+  syntax['NeogitObjectId'] = syntax["Comment"]
+  syntax['NeogitStash'] =  syntax["Comment"]
+  syntax['NeogitRebaseDone'] = syntax["Comment"]
+  syntax['NeogitHunkHeader'] = { fg = colors.blue, }
+  syntax['NeogitHunkHeaderHighlight'] = { fg = colors.blue, }
+  syntax['NeogitDiffContextHighlight'] = { fg = colors.base0, }
+  syntax['NeogitDiffDeleteHighlight'] = { fg = colors.red, }
+  syntax['NeogitDiffAddHighlight'] = { fg = colors.green, }
+  syntax['NeogitDiffDelete'] = { fg = colors.red, }
+  syntax['NeogitDiffAdd'] = { fg = colors.green, }
+  syntax['NeogitCommitViewHeader'] = { fg = colors.blue, }
+  syntax['NeogitChangeModified'] = { fg = colors.blue, style = "bold", }
+
+  syntax['NeogitChangeAdded'] = { fg = colors.green, style = "bold", }
+  syntax['NeogitChangeRenamed'] = { fg = colors.violet, style = "bold", }
+  syntax['NeogitChangeUpdated'] = { fg = colors.yellow, style = "bold", }
+  syntax['NeogitChangeCopied'] = { fg = colors.magenta, style = "bold", }
+  syntax['NeogitChangeBothModified'] = { fg = colors.yellow, style = "bold", }
+  syntax['NeogitChangeNewFile'] = { fg = colors.green, style = "bold", }
+  syntax['NeogitUntrackedfiles'] = { fg = colors.violet, style = "bold", }
+  syntax['NeogitUnstagedchanges'] = { fg = colors.violet, style = "bold", }
+  syntax['NeogitUnmergedchanges'] = { fg = colors.violet, style = "bold", }
+  syntax['NeogitUnpulledchanges'] = { fg = colors.violet, style = "bold", }
+  syntax['NeogitRecentcommits'] = { fg = colors.violet, style = "bold", }
+  syntax['NeogitStagedchanges'] = { fg = colors.violet, style = "bold", }
+  syntax['NeogitStashes'] = { fg = colors.violet, style = "bold", }
+  syntax['NeogitRebasing'] = { fg = colors.violet, style = "bold", }
+  syntax['NeogitNotificationInfo'] = { fg = colors.blue }
+  syntax['NeogitNotificationWarning'] = { fg = colors.yellow }
+  syntax['NeogitNotificationError'] = { fg = colors.red }
 
 
 	for group, highlights in pairs(syntax) do
